@@ -1,11 +1,13 @@
 public class Main3 {
   public static void main(String[] args) {
-    for (int i = 1; i < 10; i++){
-      for (int j = 1; j < 10; j++){
-        System.out.println(i * j);
-        System.out.println("");
-      }
-      System.out.println("");
+    int isHungry = 0;
+    String food = "寿司";
+    System.out.println("こんにちは");
+    if (isHungry == 0) {
+      System.out.println("お腹がいっぱいです");
+    } else {
+      System.out.println(food + "をいただきます");
     }
+    System.out.println("ごちそうさまでした");
   }
 }
