@@ -1,10 +1,8 @@
 public class Main2 {
   public static void main(String[] args){
-    int a = 100;
-    a++;
-    int b = 100;
-    b--;
-    System.out.println(a);
-    System.out.println(b);
+    float f = 3;
+    double d = f;
+    System.out.println(f);
+    System.out.println(d);
   }
 }
