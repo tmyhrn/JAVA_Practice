@@ -1,8 +1,8 @@
 public class Main2 {
   public static void main(String[] args){
-    String name = "すがわら";
-    System.out.print("私の名前は");
-    System.out.print(name);
-    System.out.print("です");
+    int a = 5;
+    int b = 3;
+    int m = Math.max(a, b);
+    System.out.println("比較実験：" + a + "と" + b + "とで大きい方は…" + m);
   }
 }
