@@ -18,7 +18,7 @@ public class Main3 {
     switch (fortune) {
       case 1 :
         System.out.println("大吉");
-        break;
+        //あえてbreak;を省略→「大吉と中吉が表示される」
       case 2 :
         System.out.println("中吉");
         break;
