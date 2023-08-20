@@ -1,12 +1,26 @@
 public class Main4 {
   public static void main(String[] args) {
-    int [] scores = {20, 30, 40, 50, 80};
-    int count = 0;
-    for (int i = 0; i < scores.length; i++) {
-      if (scores[i] >= 50) {
-        count++;
+    int [] seq = new int[10];
+    
+    for (int i = 0; i < seq.length; i++) {
+      seq[i] = new java.util.Random().nextInt(4);
+    }
+    
+    for (int i = 0; i < seq.length; i++) {
+      switch(seq[i]) {
+        case 0:
+          System.out.println("A");
+          break;
+        case 1:
+          System.out.println("T");
+          break;
+        case 2:
+          System.out.println("G");
+          break;
+        case 3:
+          System.out.println("C");
+          break;
       }
     }
-    System.out.println("50点以上の科目の数は：" + count);
   }
 }
