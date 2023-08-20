@@ -3,6 +3,14 @@ public class Main4 {
     int [] seq = new int[10];
     for (int i = 0; i < seq.length; i++) {
       seq[i] = new java.util.Random().nextInt(4);
+    }
+    
+    //変更後
+    for (int i = 0; i < seq.length; i++) {
+      char [] base = {'A', 'T', 'G', 'C'};
+      System.out.println(base[seq[i]] + "");
+    }
+    /* 変更前
       switch(seq[i]) {
         case 0:
           System.out.println("A");
@@ -18,5 +26,6 @@ public class Main4 {
           break;
       }
     }
+    */
   }
 }
