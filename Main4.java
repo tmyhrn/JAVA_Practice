@@ -1,9 +1,8 @@
-//ガベージコレクション(6行目のデータ)
+// nullを代入しているため
 public class Main4 {
   public static void main(String[] args) {
-    boolean judge = true;
-    if (judge == true) {
-      int [] array = {1,2,3,};
-    }
+    int [] array = {1,2,3};
+    array = null;
+    array[0] = 10; 
   }
 }
