@@ -1,11 +1,9 @@
 public class Main4 {
   public static void main(String[] args) {
-    int [] moneyList = {121902, 8302, 55100};
-    for (int i = 0; i < moneyList.length; i++) {
-      System.out.println(moneyList[i]);
-    }
-    for (int m : moneyList) {
-      System.out.println(m);
-    }
+    int [] counts = null;
+    float [] heights = {171.3F, 175.0F};
+
+    System.out.println(heights[2]);
   }
 }
+//エラー：NullPointerException・ArrayIndexOutOfBoundsException　
