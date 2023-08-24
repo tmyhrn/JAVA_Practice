@@ -1,12 +1,10 @@
-//エラー発生(xとyのスコープが)
 public class Main5 {
-  public static void main(String[] args) {
-    int x = 100;
-    int y = 10;
-    add();
-  }
-  public static void add() {
+  public static int add(int x, int y) {
     int ans = x + y;
-    System.out.println(x + "+" + y + "=" + ans);
+    return ans;
+  }
+  public static void main(String[] args) {
+    int ans = add(100, 10);
+    System.out.println("100 + 10 = " + ans);
   }
 }
