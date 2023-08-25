@@ -1,15 +1,15 @@
 public class Main5 {
-  public static int[] makeArray(int size) {
-    int[] newArray = new int[size];
-    for (int i = 0; i < newArray.length; i++) {
-      newArray[i] =i;
-    }
-    return newArray;
-  }
   public static void main(String[] args) {
-    int[] array = makeArray(3);
-    for  (int i : array) {
-      System.out.println(i);
-    }
+    introduceOneself();
+  }
+  public static void introduceOneself() {
+    String name = "Tomoya";
+    int age = 28;
+    double tall = 168.2;
+    char eto = '亥';
+    System.out.println(name);
+    System.out.println(age);
+    System.out.println(tall);
+    System.out.println(eto);
   }
 }
