@@ -1,9 +1,16 @@
-//1〜10の数字の偶数のみを大きい順に上から縦に並ぶように表示させる
-//初期値を10とし、2ずつ減少させながらfor文を用いて繰り返し処理を行うようにして表現
+//1〜10までの偶数が何個あるのか、偶数の合計は幾つになるかを表示させる
+//偶数の個数をカウントする変数をcount、偶数の合計をする変数をsumとする
+//for文を用い、初期値2から2ずつ合計し、countとsumにそれぞれ合計するようにしている
 public class Practice {
   public static void main(String[] args) {
-    for (int i = 10; i >= 2; i -= 2) {
-        System.out.println(i);
+    int count = 0;
+    int sum = 0;
+    
+    for (int i = 2; i <= 10; i += 2) {
+      count ++;
+      sum += i;
     }
+    System.out.println("偶数の個数は" + count);
+    System.out.println("偶数の合計は" + sum);
   }
 }
