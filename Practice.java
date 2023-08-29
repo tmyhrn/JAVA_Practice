@@ -1,16 +1,12 @@
-//1〜10までの偶数が何個あるのか、偶数の合計は幾つになるかを表示させる
-//偶数の個数をカウントする変数をcount、偶数の合計をする変数をsumとする
-//for文を用い、初期値2から2ずつ合計し、countとsumにそれぞれ合計するようにしている
+//1〜10までの整数をカンマ区切りで横並びで表示(10にはカンマをつけない)
+//for文を用いて、初期値1から1ずつ数を増やしていき、10未満の場合はカンマで区切る
 public class Practice {
   public static void main(String[] args) {
-    int count = 0;
-    int sum = 0;
-    
-    for (int i = 2; i <= 10; i += 2) {
-      count ++;
-      sum += i;
+    for (int i = 1; i <= 10; i++) {
+      System.out.print(i);
+      if (i < 10) {
+        System.out.print(",");
+      }
     }
-    System.out.println("偶数の個数は" + count);
-    System.out.println("偶数の合計は" + sum);
   }
 }
