@@ -1,16 +1,12 @@
-//1〜10までの偶数が何個あるのか、偶数の合計は幾つになるかを表示させる問題
+//1〜10までの整数をカンマ区切りで横並びで表示（10にはカンマをつけない）させる問題
 
 public class Practice {
   public static void main(String[] args) {
-    int count = 0;
-    int sum = 0;
     for (int i = 1; i < 11; i ++) {
-      if (i % 2 == 0) {
-        count++;
-        sum += i; 
+      System.out.print(i);
+      if (i < 10) {
+        System.out.print(",");
       }
     }
-    System.out.println(count);
-    System.out.println(sum);
   }
 }
