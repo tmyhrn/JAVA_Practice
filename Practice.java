@@ -1,18 +1,11 @@
-//1〜10までの偶数が何個あるのか、偶数の合計は幾つになるかを表示させる問題
+//1〜10の数字の偶数のみを大きい順に上から縦に並ぶように表示させる
 
 public class Practice {
   public static void main(String[] args) {
-    int count = 0;
-    int sum = 0;
-    for (int i = 10; i > 1; i--) {
+    for (int i = 10; i > 1; i --) {
       if (i % 2 == 0) {
-        count ++;
-        sum += i;
+        System.out.println(i);
       }
     }
-    System.out.println("偶数の数：" + count);
-    System.out.println("偶数の合計：" + sum);
   }
 }
-
-//以前と異なり、初期値を10にし、1以上になるまで1ずつ減少するように設定
