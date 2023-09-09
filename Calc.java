@@ -4,7 +4,7 @@ import calcapp.logics.*;
 public class Calc {
   public static void main(String[] args) {
     int a = 10; int b = 2;
-    int total = CalcLogic.tasu(a, b);
+    int total = CalcLogic.tasu(a, b); //パッケージをimportしているので、「calcapp.logics.」と書かなくてもOK
     int delta = calcapp.logics.CalcLogic.hiku(a, b);
     System.out.println("足すと" + total + "、引くと" + delta);
   }
