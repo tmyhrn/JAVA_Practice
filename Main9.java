@@ -1,10 +1,16 @@
 public class Main9 {
+  public static void heal(int hp) {
+    hp += 10;
+  }
+  public static void heal(Thief thief) {
+    thief.hp += 10;
+  }
   public static void main(String[] args) {
-    Hero h1 = new Hero("ミナト");
-    System.out.println(h1.name);
-    Hero h2 = new Hero();
-    System.out.println(h2.name);
+    int baseHp = 25;
+    Thief t = new Thief("アサカ", baseHp);
+    heal(baseHp);
+    System.out.println(baseHp + "：" + t.hp);
+    heal(t);
+    System.out.println(baseHp + "：" + t.hp);
   }
 }
-
-//この方法でコンパイルすることは可能だが、効率が悪いから通常は利用しないとのこと
