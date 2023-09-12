@@ -4,3 +4,5 @@ public class Main9 {
     System.out.println(s);
   }
 }
+
+//この方法でコンパイルすることは可能だが、効率が悪いから通常は利用しないとのこと
