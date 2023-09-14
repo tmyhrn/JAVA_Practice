@@ -8,10 +8,13 @@ public class SuperHero extends Hero {
     this.flying = true;
     System.out.println("飛び上がった！");
   }
-  
   //着地するメソッド
   public void land() {
     this.flying = false;
     System.out.println("着地した！");
+  }
+  //逃げるメソッド(Heroクラスにも記載しているが、ここではオーバーライドする)
+  public void run() {
+    System.out.println(this.name + "は撤退した！");
   }
 }
