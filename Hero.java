@@ -2,6 +2,10 @@ public class Hero {
   String name = "ミナト";
   int hp = 100;
   
+  public Hero() {
+    System.out.println("Heroのコンストラクタが動作");
+  }
+  
   //転ぶメソッド(finalがついているのでオーバーライド不可)
   public final void slip() {
     this.hp -= 5;

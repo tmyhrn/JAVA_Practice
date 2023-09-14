@@ -1,6 +1,10 @@
 //Heroクラスの継承を行う
 public class SuperHero extends Hero {
   boolean flying;
+  
+  public SuperHero() {
+    System.out.println("SuperHeroのコンストラクタが動作");
+  }
   //戦うメソッド(オーバーライド)
   public void attack(Matango m) {
     super.attack(m); //親インスタンス部分のattack()を呼び出している
