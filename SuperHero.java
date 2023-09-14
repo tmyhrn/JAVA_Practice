@@ -3,13 +3,9 @@ public class SuperHero extends Hero {
   boolean flying;
   //戦うメソッド(オーバーライド)
   public void attack(Matango m) {
-    System.out.println(this.name + "の攻撃！");
-    m.hp -= 5;
-    System.out.println("5ポイントのダメージを与えた！");
+    super.attack(m); //親インスタンス部分のattack()を呼び出している
     if (this.flying) {
-      System.out.println(this.name + "の追加攻撃！");
-      m.hp -= 5;
-      System.out.println("5ポイントのダメージを与えた！");
+      super.attack(m); //親インスタンス部分のattack()を呼び出している
     }
   }
   //飛ぶメソッド
