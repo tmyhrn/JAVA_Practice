@@ -1,16 +1,16 @@
 public class Hero {
-  String name;
-  int hp;
-  Sword sword;
-  public void attack() {
-    System.out.println(this.name + "は攻撃した！");
-    System.out.println("敵に5ポイントのダメージを与えた");
+  String name = "ミナト";
+  int hp = 100;
+  
+  //戦うメソッド
+  public void attack(Matango m) {
+    System.out.println(this.name + "の攻撃！");
+    m.hp -= 5;
+    System.out.println("5ポイントのダメージを与えた！");
   }
-  public Hero(String name) {
-    this.hp = 100; //hpフィールドを100で初期化
-    this.name = name;
-  }
-  public Hero() {
-    this("ダミー");
+  
+  //逃げるメソッド
+  public void run() {
+    System.out.println(this.name + "は逃げ出した！");
   }
 }
