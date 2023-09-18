@@ -16,5 +16,11 @@ public class Main8 {
     m1.run();
     m2.run();
     h.run();
+    
+    Cleric c = new Cleric();
+    c.name = "トナミ";
+    
+    c.selfAid();
+    c.pray(5);
   }
 }
