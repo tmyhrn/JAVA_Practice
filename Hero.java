@@ -21,6 +21,6 @@ public class Hero {
   public void run() {
     System.out.println(this.name + "は逃げ出した！");
     System.out.println("終了！");
-    System.out.println("最終HPは" + this.name + "でした！");
+    System.out.println("最終HPは" + this.hp + "でした！");
   }
 }
