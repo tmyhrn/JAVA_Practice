@@ -25,4 +25,8 @@ public class Hero {
     System.out.println("終了！");
     System.out.println("最終HPは" + this.hp + "でした！");
   }
+  
+  public Hero() {
+    this.hp = 100;
+  }
 }
