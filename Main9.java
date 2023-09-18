@@ -1,16 +1,9 @@
 public class Main9 {
-  public static void heal(int hp) {
-    hp += 10;
-  }
-  public static void heal(Thief thief) {
-    thief.hp += 10;
-  }
   public static void main(String[] args) {
-    int baseHp = 25;
-    Thief t = new Thief("アサカ", baseHp);
-    heal(baseHp);
-    System.out.println(baseHp + "：" + t.hp);
-    heal(t);
-    System.out.println(baseHp + "：" + t.hp);
+    Hero h1 = new Hero();
+    h1.hp = 100;
+    Hero h2 = h1;
+    h2.hp = 200;
+    System.out.println(h1.hp);
   }
 }
