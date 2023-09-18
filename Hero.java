@@ -5,7 +5,8 @@ public class Hero {
     
   }
   public void sleep() {
-    
+    this.hp = 100;
+    System.out.println(this.name + "は眠って回復した”");
   }
   public void sit(int sec) {
     
